@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^5.1.3",
+    "@prisma/client": "^5.15.0",
     "next": "14.2.3",
+    "prisma": "^5.15.0",
     "react": "^18",
     "react-dom": "^18"
   },

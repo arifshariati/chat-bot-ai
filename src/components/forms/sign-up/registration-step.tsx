@@ -26,7 +26,7 @@ const RegistrationFormStep = () => {
   const [onOTP, setOnOTP] = useState<string>("");
   const [onUserType, setOnUserType] = useState<"owner" | "student">("owner");
 
-  setValue("oto", onOTP);
+  setValue("otp", onOTP);
 
   switch (currentStep) {
     case 1:

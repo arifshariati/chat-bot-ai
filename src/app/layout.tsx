@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description: "Chat Bot AI with Next JS, Clerk for Authentication, Bun, Strip, Pusher and more.",
 };
 
+// NOTE: suppressHydrationWarning={true} removes Warning: Extra attributes from the server: class,style
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -19,8 +20,8 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <html lang="en">
-        <body className={inter.className}>
+      <html lang="en" suppressHydrationWarning={true}>
+        <body className={inter.className} suppressHydrationWarning={true}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
             {children}
             <Toaster />

@@ -23,18 +23,7 @@ const MaximizedMenu = ({ current, domains, onExpand, onSignOut }: Props) => {
   return (
     <div className="py-3 px-4 flex flex-col h-full">
       <div className="flex justify-between items-center">
-        <Image
-          src="/images/logo.png"
-          alt="LOGO"
-          sizes="100vw"
-          className="animate-fade-in opacity-0 delay-300 fill-mode-forwards"
-          style={{
-            width: "50%",
-            height: "auto",
-          }}
-          width={0}
-          height={0}
-        />
+        <h1 className="font-bold text-xl">🤖 Chat Bot AI</h1>
         <Menu className="cursor-pointer animate-fade-in opacity-0 delay-300 fill-mode-forwards" onClick={onExpand} />
       </div>
       <div className="animate-fade-in opacity-0 delay-300 fill-mode-forwards flex flex-col justify-between h-full pt-10">

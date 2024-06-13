@@ -8,9 +8,7 @@ import { Card, CardContent, CardDescription } from "../ui/card";
 
 import Modal from "../mondal";
 
-type Props = {};
-
-const BillingSettings = async (props: Props) => {
+const BillingSettings = async () => {
   const plan = await onGetSubscriptionPlan();
   const planFeatures = pricingCards.find((card) => card.title.toUpperCase() === plan?.toUpperCase())?.features;
   if (!planFeatures) return;

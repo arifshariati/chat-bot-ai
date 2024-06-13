@@ -3,7 +3,7 @@ import { Label } from "../ui/label";
 import { Card, CardContent, CardDescription, CardTitle } from "../ui/card";
 import { Input } from "../ui/input";
 
-type Props = {
+type SubscriptionCardProps = {
   title: string;
   description: string;
   price: string;
@@ -12,7 +12,7 @@ type Props = {
   id: string;
 };
 
-const SubscriptionCard = ({ title, description, price, onPayment, payment, id }: Props) => {
+const SubscriptionCard = ({ title, description, price, onPayment, payment, id }: SubscriptionCardProps) => {
   return (
     <Label htmlFor={id}>
       <Card className={cn("w-full cursor-pointer", payment == id && "border-orange")}>

@@ -1,15 +1,15 @@
+import Link from "next/link";
+import Image from "next/image";
+import { Plus } from "lucide-react";
 import { useDomain } from "@/hooks/useDomain";
 import { cn } from "@/lib/utils";
 import AppDrawer from "../app-drawer";
-import { Plus } from "lucide-react";
 import Loader from "../loader";
 import FormGenerator from "../forms/form-generator";
 import UploadButton from "../upload-button";
 import { Button } from "../ui/button";
-import Link from "next/link";
-import Image from "next/image";
 
-type Props = {
+type DomainMenuProps = {
   min?: boolean;
   domains:
     | {
@@ -21,13 +21,9 @@ type Props = {
     | undefined;
 };
 
-const DomainMenu = ({ domains, min }: Props) => {
-  //   const { register, onAddDomain, loading, errors, isDomain } = useDomain();
-  const { register, loading, errors, isDomain } = useDomain();
+const DomainMenu = ({ domains, min }: DomainMenuProps) => {
+  const { register, onAddDomain, loading, errors, isDomain } = useDomain();
 
-  const onAddDomain = () => {
-    // temporary function
-  };
   return (
     <div className={cn("flex flex-col gap-3", min ? "mt-6" : "mt-3")}>
       <div className="flex justify-between w-full items-center">

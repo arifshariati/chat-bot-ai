@@ -12,7 +12,7 @@ const DashboardLayout = async ({ children }: DashboardLayoutProps) => {
     <ChatProvider>
       <div className="flex h-screen w-full">
         <SideBar domains={authenticated.domain} />
-        <div className="w-full h-screen flex flex-col pl-20 md:pl-4">{children}</div>
+        <div className="w-full h-screen flex flex-col px-6 py-2 md:pl-4">{children}</div>
       </div>
     </ChatProvider>
   );

@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
-import { useChatBot } from "@/hooks/chatbot/use-chatbot";
-import { BotWindow } from "./window";
+import { useChatBot } from "@/hooks/useChatBot";
 import { cn } from "@/lib/utils";
 import { BotIcon } from "@/icons/bot-icon";
+import { BotWindow } from "./window";
 
 const AiChatBot = () => {
   const {

@@ -1,4 +1,4 @@
-import { useRealTime } from "@/hooks/chatbot/use-chatbot";
+import { useRealTime } from "@/hooks/useChatBot";
 import { Card } from "../ui/card";
 
 type RealTimeModeProps = {

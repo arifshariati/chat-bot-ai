@@ -1,15 +1,12 @@
 "use client";
+import { PaperclipIcon } from "lucide-react";
 import { useChatWindow } from "@/hooks/useConversation";
-import React from "react";
 import Loader from "../loader";
-import Bubble from "../chatbot/bubble";
+import Bubble from "../chat-bot/bubble";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
-import { PaperclipIcon } from "lucide-react";
 
-type Props = {};
-
-const Messenger = (props: Props) => {
+const Messenger = () => {
   const { messageWindowRef, chats, loading, chatRoom, onHandleSentMessage, register } = useChatWindow();
   return (
     <div className="flex-1 flex flex-col h-0 relative">

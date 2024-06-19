@@ -20,7 +20,7 @@ const Modal = ({ trigger, children, title, description, type, logo }: ModalProps
           <DialogContent>
             <div className="flex justify-center gap-3">
               <div className="w-12 h-12 relative">
-                <Image src={`https://ucarecdn.com/2c9bd4ab-1f00-41df-bad2-df668f65a232/`} fill alt="Corinna" />
+                <Image src={`https://ucarecdn.com/a2af0e52-5fd9-4651-ac3c-6df68db74f8f/`} fill alt="Chat Bot AI logo" className="rounded-md" />
               </div>
               <div className="text-gray-400">
                 <ArrowLeft size={20} />

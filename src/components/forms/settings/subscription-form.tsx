@@ -18,7 +18,7 @@ const SubscriptionForm = ({ plan }: SubscriptionFormProps) => {
         <div className="flex flex-col gap-3">
           <SubscriptionCard
             title="STANDARD"
-            description="Perfect if you’re just getting started with Corinna AI"
+            description="Perfect if you’re just getting started with Chat Bot AI"
             price="0"
             payment={payment}
             onPayment={onSetPayment}
@@ -27,7 +27,7 @@ const SubscriptionForm = ({ plan }: SubscriptionFormProps) => {
 
           <SubscriptionCard
             title="PRO"
-            description="Perfect if you’re just getting started with Corinna AI"
+            description="Perfect if you’re just getting started with Chat Bot AI"
             price="15"
             payment={payment}
             onPayment={onSetPayment}
@@ -36,7 +36,7 @@ const SubscriptionForm = ({ plan }: SubscriptionFormProps) => {
 
           <SubscriptionCard
             title="ULTIMATE"
-            description="Perfect if you’re just getting started with Corinna AI"
+            description="Perfect if you’re just getting started with Chat Bot AI"
             price="35"
             payment={payment}
             onPayment={onSetPayment}

@@ -4,9 +4,7 @@ import Messenger from "@/components/conversation/messenger";
 import InfoBar from "@/components/infobar";
 import { Separator } from "@/components/ui/separator";
 
-type Props = {};
-
-const ConversationPage = async (props: Props) => {
+const ConversationPage = async () => {
   const domains = await onGetAllAccountDomains();
   return (
     <div className="w-full h-full flex">
